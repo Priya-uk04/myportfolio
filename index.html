@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Priya Maurya | Full Stack Developer (MERN)</title>
+  <meta name="description" content="Priya Maurya, Full Stack Developer at Volvrit. MERN stack with a backend focus: Node.js, Express.js, MongoDB, Redis, BullMQ, Socket.IO, React.js and Next.js." />
+  <meta name="author" content="Priya Maurya" />
+
+  <!-- Link preview (LinkedIn, WhatsApp, X). After deploying, set og:url and og:image to full https:// addresses. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Priya Maurya | Full Stack Developer (MERN)" />
+  <meta property="og:description" content="MERN stack developer with about 2 years of experience. Node.js, Express.js, MongoDB, Redis, BullMQ, Socket.IO, React.js and Next.js." />
+  <meta property="og:image" content="assets/images/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+
+  <!-- Shared isometric cube icon -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="cube" viewBox="0 0 32 32">
+      <polygon points="16,3 29,10 16,17 3,10" fill="currentColor" opacity=".95"/>
+      <polygon points="3,10 16,17 16,30 3,23" fill="currentColor" opacity=".6"/>
+      <polygon points="16,17 29,10 29,23 16,30" fill="currentColor" opacity=".4"/>
+    </symbol>
+  </svg>
+
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Priya Maurya, home">
+        <svg class="brand-cube" aria-hidden="true"><use href="#cube"/></svg>
+        <span class="brand-name">Priya Maurya</span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="iso-grid" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot"></span>Full Stack Developer at Volvrit</p>
+          <h1>I build MERN products end to end, <span class="grad">backend first.</span></h1>
+          <p class="lead">
+            I'm Priya, a full stack developer with about 2 years of experience on the MERN stack. Most of my work
+            is on the backend with Node.js, Express and MongoDB, and I also build the React.js and Next.js
+            frontends for the same products.
+          </p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#projects">See my work</a>
+            <a class="btn btn-ghost" href="assets/resume/Priya_Maurya_Full_Stack_Developer.pdf" download>Download resume</a>
+          </div>
+          <ul class="socials" aria-label="Profiles">
+            <li><a href="https://www.linkedin.com/in/priya-maurya-107a61252" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/Priya-uk04" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="mailto:priyamaurya60037@gmail.com">priyamaurya60037@gmail.com</a></li>
+          </ul>
+        </div>
+
+        <div class="hero-art">
+          <svg class="iso iso-map" viewBox="44 36 572 338" role="img" aria-label="Isometric map of the services I build: a Node.js and Express API in the centre, connected to a React front end, Redis and BullMQ, MongoDB, and payment and AI integrations">
+          <polygon class="plat-side" points="50.0,210.0 330.0,350.0 330.0,366.0 50.0,226.0"/>
+          <polygon class="plat-side2" points="610.0,210.0 330.0,350.0 330.0,366.0 610.0,226.0"/>
+          <polygon class="plat-top" points="330.0,70.0 610.0,210.0 330.0,350.0 50.0,210.0"/>
+          <line class="plat-grid" x1="370.0" y1="90.0" x2="90.0" y2="230.0"/>
+          <line class="plat-grid" x1="290.0" y1="90.0" x2="570.0" y2="230.0"/>
+          <line class="plat-grid" x1="410.0" y1="110.0" x2="130.0" y2="250.0"/>
+          <line class="plat-grid" x1="250.0" y1="110.0" x2="530.0" y2="250.0"/>
+          <line class="plat-grid" x1="450.0" y1="130.0" x2="170.0" y2="270.0"/>
+          <line class="plat-grid" x1="210.0" y1="130.0" x2="490.0" y2="270.0"/>
+          <line class="plat-grid" x1="490.0" y1="150.0" x2="210.0" y2="290.0"/>
+          <line class="plat-grid" x1="170.0" y1="150.0" x2="450.0" y2="290.0"/>
+          <line class="plat-grid" x1="530.0" y1="170.0" x2="250.0" y2="310.0"/>
+          <line class="plat-grid" x1="130.0" y1="170.0" x2="410.0" y2="310.0"/>
+          <line class="plat-grid" x1="570.0" y1="190.0" x2="290.0" y2="330.0"/>
+          <line class="plat-grid" x1="90.0" y1="190.0" x2="370.0" y2="330.0"/>
+          <path class="flow" d="M330.0 210.0 L206.0 158.0"/>
+          <circle class="packet" r="4" style="offset-path: path('M330.0 210.0 L206.0 158.0')"/>
+          <path class="flow" d="M330.0 210.0 L454.0 158.0"/>
+          <circle class="packet" r="4" style="offset-path: path('M330.0 210.0 L454.0 158.0')"/>
+          <path class="flow" d="M330.0 210.0 L206.0 262.0"/>
+          <circle class="packet" r="4" style="offset-path: path('M330.0 210.0 L206.0 262.0')"/>
+          <path class="flow" d="M330.0 210.0 L454.0 262.0"/>
+          <circle class="packet" r="4" style="offset-path: path('M330.0 210.0 L454.0 262.0')"/>
+          <g class="tower">
+            <polygon points="154.0,100.0 206.0,126.0 206.0,184.0 154.0,158.0" fill="#6b6f9e"/>
+            <polygon points="258.0,100.0 206.0,126.0 206.0,184.0 258.0,158.0" fill="#4c5080"/>
+            <polygon points="206.0,74.0 258.0,100.0 206.0,126.0 154.0,100.0" fill="#c7cbef"/>
+            <text class="tower-label" transform="matrix(0.894 0.447 -0.894 0.447 206.0 100.0)" text-anchor="middle" dy="4">AI · Pay</text>
+          </g>
+          <g class="tower">
+            <polygon points="402.0,74.0 454.0,100.0 454.0,184.0 402.0,158.0" fill="#ec4899"/>
+            <polygon points="506.0,74.0 454.0,100.0 454.0,184.0 506.0,158.0" fill="#db2777"/>
+            <polygon points="454.0,48.0 506.0,74.0 454.0,100.0 402.0,74.0" fill="#f9a8d4"/>
+            <text class="tower-label" transform="matrix(0.894 0.447 -0.894 0.447 454.0 74.0)" text-anchor="middle" dy="4">Redis</text>
+          </g>
+          <g class="tower">
+            <polygon points="278.0,100.0 330.0,126.0 330.0,236.0 278.0,210.0" fill="#8b5cf6"/>
+            <polygon points="382.0,100.0 330.0,126.0 330.0,236.0 382.0,210.0" fill="#7c3aed"/>
+            <polygon points="330.0,74.0 382.0,100.0 330.0,126.0 278.0,100.0" fill="#c4b5fd"/>
+            <text class="tower-label" transform="matrix(0.894 0.447 -0.894 0.447 330.0 100.0)" text-anchor="middle" dy="4">Node API</text>
+          </g>
+          <g class="tower">
+            <polygon points="154.0,192.0 206.0,218.0 206.0,288.0 154.0,262.0" fill="#22d3ee"/>
+            <polygon points="258.0,192.0 206.0,218.0 206.0,288.0 258.0,262.0" fill="#06b6d4"/>
+            <polygon points="206.0,166.0 258.0,192.0 206.0,218.0 154.0,192.0" fill="#a5f3fc"/>
+            <text class="tower-label" transform="matrix(0.894 0.447 -0.894 0.447 206.0 192.0)" text-anchor="middle" dy="4">React</text>
+          </g>
+          <g class="tower">
+            <polygon points="402.0,172.0 454.0,198.0 454.0,288.0 402.0,262.0" fill="#2dd4bf"/>
+            <polygon points="506.0,172.0 454.0,198.0 454.0,288.0 506.0,262.0" fill="#14b8a6"/>
+            <polygon points="454.0,146.0 506.0,172.0 454.0,198.0 402.0,172.0" fill="#99f6e4"/>
+            <text class="tower-label" transform="matrix(0.894 0.447 -0.894 0.447 454.0 172.0)" text-anchor="middle" dy="4">MongoDB</text>
+          </g>
+          </svg>
+          <ul class="hero-legend" aria-hidden="true">
+            <li><i style="background:#8b5cf6"></i>Node.js · Express API</li>
+            <li><i style="background:#22d3ee"></i>React.js · Next.js</li>
+            <li><i style="background:#ec4899"></i>Redis · BullMQ · Socket.IO</li>
+            <li><i style="background:#2dd4bf"></i>MongoDB</li>
+            <li><i style="background:#6b6f9e"></i>Razorpay · OpenAI · Maps</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <dl class="stats spot">
+          <div><dt>~2 yrs</dt><dd>building MERN applications</dd></div>
+          <div><dt>260+</dt><dd>REST APIs in the CafeCold backend</dd></div>
+          <div><dt>~40%</dt><dd>faster responses from Redis caching</dd></div>
+          <div><dt>14</dt><dd>languages in the BandhanGuru web app</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="wrap about">
+        <div class="about-side">
+          <div class="avatar">
+            <img src="assets/images/profile.jpg" alt="Priya Maurya" width="600" height="600"
+                 onerror="this.parentElement.classList.add('no-img'); this.remove();" />
+            <span class="avatar-fallback" aria-hidden="true">PM</span>
+          </div>
+        </div>
+        <div>
+          <p class="kicker">About</p>
+          <h2>Full stack on paper, backend at heart.</h2>
+          <div class="prose">
+            <p>
+              At Volvrit I build complete features on MERN stack products for clients: MongoDB schemas and Express
+              REST APIs on the backend, React.js and Next.js screens on the frontend.
+            </p>
+            <p>
+              Recent work covers payments, background jobs, real-time tracking and access control. I owned the
+              CafeCold backend, built a double-entry ledger for credit and GST invoicing, fixed duplicate orders in
+              production with a database-level guard, and built an AI assistant on OpenAI function calling.
+            </p>
+            <p>
+              I care about the boring parts that keep production calm: indexes, atomic updates, queues for slow work,
+              and TypeScript so type errors are caught before release.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section alt" id="skills">
+      <div class="wrap">
+        <p class="kicker">Skills</p>
+        <h2>What I work with</h2>
+        <div class="skill-grid">
+          <article class="skill-card spot" style="--c:#7c3aed">
+            <h3><svg class="cube" aria-hidden="true"><use href="#cube"/></svg>Backend</h3>
+            <ul class="chips">
+              <li>Node.js</li><li>Express.js</li><li>REST API Design</li><li>Socket.IO</li><li>BullMQ</li>
+              <li>JWT</li><li>RBAC</li><li>MVC / Service Layer</li>
+            </ul>
+          </article>
+          <article class="skill-card spot" style="--c:#14b8a6">
+            <h3><svg class="cube" aria-hidden="true"><use href="#cube"/></svg>Databases</h3>
+            <ul class="chips">
+              <li>MongoDB</li><li>Aggregation</li><li>Transactions</li><li>Geospatial Indexes</li>
+              <li>Redis</li><li>Caching</li><li>Pub/Sub</li>
+            </ul>
+          </article>
+          <article class="skill-card spot" style="--c:#06b6d4">
+            <h3><svg class="cube" aria-hidden="true"><use href="#cube"/></svg>Frontend</h3>
+            <ul class="chips">
+              <li>React.js</li><li>Next.js</li><li>Redux Toolkit</li><li>React Query</li><li>Tailwind CSS</li>
+              <li>styled-components</li><li>Vite</li><li>i18next</li>
+            </ul>
+          </article>
+          <article class="skill-card spot" style="--c:#db2777">
+            <h3><svg class="cube" aria-hidden="true"><use href="#cube"/></svg>Languages</h3>
+            <ul class="chips">
+              <li>JavaScript (ES6+)</li><li>TypeScript</li><li>HTML5</li><li>CSS3</li>
+            </ul>
+          </article>
+          <article class="skill-card spot" style="--c:#4c5080">
+            <h3><svg class="cube" aria-hidden="true"><use href="#cube"/></svg>Integrations</h3>
+            <ul class="chips">
+              <li>Razorpay</li><li>OpenAI API</li><li>Function Calling</li><li>Structured Outputs</li>
+              <li>Firebase Cloud Messaging</li><li>Google Maps</li><li>Ola Maps</li>
+            </ul>
+          </article>
+          <article class="skill-card spot" style="--c:#8b5cf6">
+            <h3><svg class="cube" aria-hidden="true"><use href="#cube"/></svg>Tools &amp; Concepts</h3>
+            <ul class="chips">
+              <li>Git</li><li>GitHub Actions</li><li>Swagger/OpenAPI</li><li>Authentication &amp; Authorization</li>
+              <li>Background Jobs</li><li>Responsive Web Design</li><li>API Documentation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <p class="kicker">Experience</p>
+        <h2>Where I've worked</h2>
+        <ol class="timeline">
+          <li class="job">
+            <div class="job-head">
+              <div>
+                <h3>Full Stack Developer</h3>
+                <p class="org">Volvrit · Delhi</p>
+              </div>
+              <p class="when">Jun 2025 – Present</p>
+            </div>
+            <ul class="points">
+              <li>Build complete features on MERN stack products for clients: MongoDB schemas and Express REST APIs on the backend, React.js and Next.js screens on the frontend.</li>
+              <li>Improved slow MongoDB queries with proper indexes and aggregation pipelines, and integrated third-party REST APIs and payment gateways behind JWT authentication.</li>
+              <li>Added Redis caching to the slowest read-heavy endpoints, cutting response times by about 40% and helping the APIs scale under peak traffic.</li>
+              <li>Moved notifications, invoice generation and other slow tasks out of the request cycle into BullMQ queues, and used Socket.IO for live updates.</li>
+              <li>Led the migration of core modules to TypeScript; type errors that used to reach production dropped by roughly 30%.</li>
+            </ul>
+          </li>
+          <li class="job">
+            <div class="job-head">
+              <div>
+                <h3>Product &amp; Website Development Intern</h3>
+                <p class="org">Partspick.in · Delhi</p>
+              </div>
+              <p class="when">Apr 2024 – Oct 2024</p>
+            </div>
+            <ul class="points">
+              <li>Built and customised storefront pages in HTML, CSS and JavaScript, and cut the add-to-cart flow from 8 steps to 4.</li>
+              <li>Tracked AOV, TAT and NPS and used them to decide which UI changes to ship.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section alt" id="projects">
+      <div class="wrap">
+        <p class="kicker">Projects</p>
+        <h2>Selected work</h2>
+
+        <!-- CafeCold -->
+        <article class="work">
+          <div class="work-media">
+            <div class="device browser">
+              <div class="browser-bar"><i></i><i></i><i></i><span>CafeCold · Logistics Admin</span></div>
+              <div class="shot shot-left" data-label="CafeCold"><img src="assets/images/cafe-cold.webp" alt="CafeCold logistics admin dashboard" loading="lazy" width="1370" height="825"
+                   onerror="this.parentElement.classList.add('no-img'); this.remove();" /></div>
+            </div>
+          </div>
+          <div class="work-body">
+            <span class="work-num" aria-hidden="true">01</span>
+            <p class="tag">Sole backend owner · Cold-chain logistics</p>
+            <h3>CafeCold: Cold-Chain Logistics Marketplace</h3>
+            <ul class="points">
+              <li>Built the whole backend: 260+ REST APIs across 20+ modules, documented in Swagger/OpenAPI.</li>
+              <li>Simultaneous bookings could take a customer over their credit limit, so the credit check and deduction became a single atomic update, with every movement recorded in a double-entry ledger that GST invoices are generated from.</li>
+              <li>Shipments move through a state machine with automatic transporter reassignment, and customers see live GPS location over Socket.IO.</li>
+            </ul>
+            <ul class="chips small"><li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>Redis</li><li>BullMQ</li><li>Socket.IO</li><li>Razorpay</li></ul>
+          </div>
+        </article>
+
+        <!-- OG Roti -->
+        <article class="work flip">
+          <div class="work-media">
+            <div class="device browser">
+              <div class="browser-bar"><i></i><i></i><i></i><span>OG Roti · Admin</span></div>
+              <div class="shot shot-left" data-label="OG Roti"><img src="assets/images/og-roti.webp" alt="OG Roti enterprise dashboard across branches" loading="lazy" width="1317" height="813"
+                   onerror="this.parentElement.classList.add('no-img'); this.remove();" /></div>
+            </div>
+          </div>
+          <div class="work-body">
+            <span class="work-num" aria-hidden="true">02</span>
+            <p class="tag">Backend developer · Food delivery</p>
+            <h3>OG Roti: Multi-Branch Food Delivery System</h3>
+            <p class="work-intro">Customer, driver and admin apps for a multi-branch food delivery business.</p>
+            <ul class="points">
+              <li>Debugged duplicate orders in production caused by customers double-tapping checkout, and fixed it in the database with a unique partial index rather than locks in application code.</li>
+              <li>Nearest-branch assignment with geospatial queries, and BullMQ jobs for order timeouts.</li>
+              <li>JWT auth with refresh-token rotation, OTP login, 2FA and per-branch data isolation.</li>
+            </ul>
+            <ul class="chips small"><li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>Redis</li><li>BullMQ</li><li>Socket.IO</li><li>Razorpay</li></ul>
+          </div>
+        </article>
+
+        <!-- SHIQU -->
+        <article class="work">
+          <div class="work-media">
+            <div class="device browser">
+              <div class="browser-bar"><i></i><i></i><i></i><span>SHIQU · Scheduling</span></div>
+              <div class="shot shot-left" data-label="SHIQU"><img src="assets/images/shiqu.webp" alt="SHIQU operations dashboard with waves and staffing alerts" loading="lazy" width="1600" height="1000"
+                   onerror="this.parentElement.classList.add('no-img'); this.remove();" /></div>
+            </div>
+          </div>
+          <div class="work-body">
+            <span class="work-num" aria-hidden="true">03</span>
+            <p class="tag">Backend engineer · Workforce scheduling</p>
+            <h3>SHIQU: Workforce Scheduling Platform</h3>
+            <ul class="points">
+              <li>Multi-tenant scheduling backend with an auto-assign engine that respects shift and availability constraints.</li>
+              <li>End-to-end test suite covering the main scheduling and permission flows.</li>
+              <li>AI assistant built on OpenAI function calling with read-only tools and strict JSON-schema outputs; simple questions go through a smaller prompt so most replies stay fast.</li>
+            </ul>
+            <ul class="chips small"><li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>Redis</li><li>OpenAI API</li></ul>
+          </div>
+        </article>
+
+        <!-- BandhanGuru -->
+        <article class="work flip">
+          <div class="work-media">
+            <div class="device browser">
+              <div class="browser-bar"><i></i><i></i><i></i><span>bandhanguru.com</span></div>
+              <div class="shot" data-label="BandhanGuru"><img src="assets/images/bandhanguru.webp" alt="BandhanGuru home page: find and book wedding vendors" loading="lazy" width="1600" height="1000"
+                   onerror="this.parentElement.classList.add('no-img'); this.remove();" /></div>
+            </div>
+          </div>
+          <div class="work-body">
+            <span class="work-num" aria-hidden="true">04</span>
+            <p class="tag"><span class="pill pill-live">Live</span> Frontend · Wedding services marketplace</p>
+            <h3>BandhanGuru: Wedding Services Marketplace</h3>
+            <ul class="points">
+              <li>Multi-role web app with role-guarded routes, Razorpay checkout and map-based vendor search.</li>
+              <li>Available in 14 languages, with a small script that catches missing or broken translations before release.</li>
+            </ul>
+            <ul class="chips small"><li>React.js</li><li>Redux Toolkit</li><li>i18next</li><li>Tailwind CSS</li><li>Razorpay</li></ul>
+            <a class="btn btn-ghost btn-sm" href="https://bandhanguru.com/" target="_blank" rel="noopener">Visit bandhanguru.com ↗</a>
+          </div>
+        </article>
+
+        <!-- Job Portal -->
+        <article class="work">
+          <div class="work-media">
+            <div class="device browser">
+              <div class="browser-bar"><i></i><i></i><i></i><span>job-portal.volvrit.org</span></div>
+              <div class="shot" data-label="Primejob"><img src="assets/images/job-portal.webp" alt="Primejob job portal home page with job search" loading="lazy" width="1600" height="1000"
+                   onerror="this.parentElement.classList.add('no-img'); this.remove();" /></div>
+            </div>
+          </div>
+          <div class="work-body">
+            <span class="work-num" aria-hidden="true">05</span>
+            <p class="tag"><span class="pill pill-live">Live</span> Full stack · Job portal</p>
+            <h3>Primejob: Job Portal Web App</h3>
+            <ul class="points">
+              <li>Role-based login for candidates and recruiters.</li>
+              <li>Job posting, application tracking and an admin dashboard.</li>
+            </ul>
+            <ul class="chips small"><li>React.js</li><li>Node.js</li><li>Express.js</li><li>MongoDB</li></ul>
+            <a class="btn btn-ghost btn-sm" href="https://job-portal.volvrit.org/" target="_blank" rel="noopener">Visit the job portal ↗</a>
+          </div>
+        </article>
+
+        <h3 class="sub">More projects</h3>
+        <div class="mini-grid">
+          <article class="mini spot">
+            <p class="tag">Frontend</p>
+            <h3>Real Estate Property Portal</h3>
+            <p>Responsive property listings site with search filters, detail pages, a channel-partner listing flow and a lead dashboard.</p>
+            <ul class="chips small"><li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="wrap two-col">
+        <div>
+          <p class="kicker">Education</p>
+          <h2>Studies</h2>
+        </div>
+        <ul class="edu">
+          <li>
+            <div><h3>Bachelor of Computer Applications (BCA)</h3><p>Invertis Institute of Engineering &amp; Technology, Bareilly</p></div>
+            <p class="when">2022 – 2025</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="iso-grid" aria-hidden="true"></div>
+      <div class="wrap contact-inner">
+        <p class="kicker">Contact</p>
+        <h2>Looking for a MERN or backend developer?</h2>
+        <p class="lead">I'm open to full stack and Node.js backend roles. Email is the fastest way to reach me.</p>
+        <div class="cta center">
+          <a class="btn btn-primary" href="mailto:priyamaurya60037@gmail.com">priyamaurya60037@gmail.com</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/priya-maurya-107a61252" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/Priya-uk04" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year">2026</span> Priya Maurya · Uttarakhand, India</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
