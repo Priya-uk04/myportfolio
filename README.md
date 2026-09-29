@@ -36,8 +36,6 @@ To replace one, save the new file with the same name. If a file is missing, its 
 3. Settings → Pages → Deploy from a branch → `main` / `(root)` → Save.
 4. The site appears at `https://<username>.github.io/<repository>/`.
 
-After it is live, change the `og:image` line in `index.html` to the full address, for example
-`https://<username>.github.io/<repository>/assets/images/og-image.png`, and add an `og:url` line with the site address,
-so LinkedIn shows the preview image.
+Live at https://priya-uk04.github.io/myportfolio/ (the link preview and canonical URL already point there).
 
 Run locally: `python -m http.server 8000` in this folder, then open http://localhost:8000.

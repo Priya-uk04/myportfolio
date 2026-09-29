@@ -90,3 +90,78 @@ document.getElementById("year").textContent = new Date().getFullYear();
     });
   });
 })();
+
+// Navbar: sliding pill under the active (or hovered) link, and a tighter bar once the page scrolls
+(function () {
+  var nav = document.querySelector(".nav");
+  var list = document.getElementById("nav-links");
+  var pill = list.querySelector(".nav-pill");
+  var links = Array.prototype.slice.call(list.querySelectorAll("a"));
+
+  function place(a) {
+    if (!a || getComputedStyle(list).flexDirection !== "row") { pill.classList.remove("on"); return; }
+    pill.style.left = a.offsetLeft + "px";
+    pill.style.width = a.offsetWidth + "px";
+    pill.classList.add("on");
+  }
+  function active() { return list.querySelector("a.active"); }
+
+  links.forEach(function (a) {
+    a.addEventListener("mouseenter", function () { place(a); });
+  });
+  list.addEventListener("mouseleave", function () { place(active()); });
+  new MutationObserver(function () { place(active()); })
+    .observe(list, { subtree: true, attributes: true, attributeFilter: ["class"] });
+  addEventListener("resize", function () { place(active()); });
+
+  function onScroll() { nav.classList.toggle("scrolled", scrollY > 20); }
+  addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+})();
+
+// Hero: type out things she has built, one after another
+(function () {
+  var el = document.querySelector(".typed");
+  if (!el) return;
+  var words = el.getAttribute("data-words").split("|");
+  var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var i = 0;
+  if (reduce) {
+    setInterval(function () { i = (i + 1) % words.length; el.textContent = words[i]; }, 3000);
+    return;
+  }
+  var text = words[0], deleting = false;
+  function tick() {
+    var word = words[i];
+    if (deleting) {
+      text = word.slice(0, text.length - 1);
+      if (!text) { deleting = false; i = (i + 1) % words.length; }
+    } else {
+      text = words[i].slice(0, text.length + 1);
+      if (text === words[i]) { deleting = true; el.textContent = text; return setTimeout(tick, 1800); }
+    }
+    el.textContent = text;
+    setTimeout(tick, deleting ? 28 : 55);
+  }
+  setTimeout(function () { deleting = true; tick(); }, 2200);
+})();
+
+// Hero: tilt the isometric map slightly towards the pointer
+(function () {
+  var hero = document.querySelector(".hero");
+  var art = document.getElementById("hero-art");
+  if (!hero || !art) return;
+  if (matchMedia("(hover: none)").matches || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  var iso = art.querySelector(".iso");
+  hero.addEventListener("pointermove", function (e) {
+    var r = art.getBoundingClientRect();
+    var dx = (e.clientX - (r.left + r.width / 2)) / r.width;
+    var dy = (e.clientY - (r.top + r.height / 2)) / r.height;
+    iso.style.setProperty("--ry", (dx * 8).toFixed(2) + "deg");
+    iso.style.setProperty("--rx", (-dy * 6).toFixed(2) + "deg");
+  });
+  hero.addEventListener("pointerleave", function () {
+    iso.style.setProperty("--ry", "0deg");
+    iso.style.setProperty("--rx", "0deg");
+  });
+})();
